@@ -6,6 +6,7 @@ require('dotenv').config()
 const app = express();
 const abi = require('./abi.json').abi
 const cors = require('cors');
+const PORT = process.env.PORT || 8080
 
 const contractAddress = "0x025aAB204Ec178545180f92FF786630846977133"
 
@@ -84,4 +85,4 @@ app.post("/api", async (req,res)=>{
  
 
 
-app.listen(80,()=>{ console.log("Server is running on port 5000");})
+app.listen(PORT,()=>{ console.log("Server is running on port 5000");})
