@@ -1,0 +1,16 @@
+{
+  "name": "@hashlips-lab/nft-erc721-collection",
+  "license": "MIT",
+  "version": "2.3.0",
+  "proxy": "http://localhost:5000",
+  "repository": {
+    "type": "git"
+
+  },
+  "scripts": {
+    "build-dapp": "cd smart-contract; yarn; yarn compile; cd ../minting-dapp; yarn; yarn build"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
