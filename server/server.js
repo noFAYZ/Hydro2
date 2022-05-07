@@ -59,6 +59,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get("/", (req,res)=>{
+res.send("Hi, Nothing's here");
+});
+
+
 app.post("/api", async (req,res)=>{
 
     try{
